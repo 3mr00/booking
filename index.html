@@ -23,7 +23,7 @@
           <div class="navbar-logo">
             <img
               class="img_logo"
-              src="./images/travel.png"
+              src="./images/travel.webp"
               alt="travel logo"
               loading="lazy"
             />
@@ -59,19 +59,9 @@
             </ul>
           </div>
           <div class="right_nav">
-            <img
-              class="nav_icon_right"
-              src="./images/user.png"
-              alt="travel logo"
-              loading="lazy"
-            />
+            <i class="nav_icon_right fa-solid fa-user"></i>
             <div class="lang_icon">
-              <img
-                class="nav_icon_right"
-                src="./images/lang.png"
-                alt="travel logo"
-                loading="lazy"
-              />
+              <i class="nav_icon_right fa-solid fa-earth-americas"></i>
               <a href="#/" class="lang_link">AR</a>
             </div>
           </div>
@@ -92,7 +82,7 @@
         </article>
         <img
           class="header_img"
-          src="./images/imgheader.png"
+          src="./images/imgheader.webp"
           alt="imgheader logo"
           loading="lazy"
         />
@@ -125,7 +115,7 @@
       <form class="search_box">
         <div class="form_group">
           <div class="input_group">
-            <label class="label_from">Destination</label>
+            <label for="cityInput1" class="label_from">Destination</label>
             <input
               id="cityInput1"
               class="Inputs_search form_control"
@@ -136,7 +126,7 @@
             <ul id="suggestions1" class="suggestions datalist_ul"></ul>
           </div>
           <div class="input_group">
-            <label class="label_from">check in</label>
+            <label for="checkInDate" class="label_from">check in</label>
 
             <input
               type="date"
@@ -146,7 +136,7 @@
             />
           </div>
           <div class="input_group">
-            <label class="label_from">check out</label>
+            <label for="checkOutDate" class="label_from">check out</label>
 
             <input
               onchange="calculateNights()"
@@ -157,7 +147,7 @@
             />
           </div>
           <div class="input_group">
-            <label class="label_from">Nights</label>
+            <label for="nightOptions" class="label_from">Nights</label>
             <select
               class="form_control"
               id="nightOptions"
@@ -175,8 +165,8 @@
             </select>
           </div>
           <div class="input_group">
-            <label class="label_from">Travellers</label>
-            <select class="form_control">
+            <label for="Travellers" class="label_from">Travellers</label>
+            <select id="Travellers" class="form_control">
               <optgroup class="form_control">
                 <option>1 Room,Adult 2</option>
                 <option>2 Room,Adult 1</option>
@@ -185,7 +175,7 @@
             </select>
           </div>
           <div class="input_group">
-            <label class="label_from">Nationality</label>
+            <label for="cityInput2" class="label_from">Nationality</label>
             <input
               id="cityInput2"
               class="Inputs_search form_control"
@@ -220,7 +210,7 @@
             </a>
           </div>
           <div class="footer-col">
-            <h4>Partner with us</h4>
+            <h1>Partner with us</h1>
             <ul class="ul_footer">
               <li><a href="#">Add your property</a></li>
               <li><a href="#">White label Request</a></li>
@@ -229,7 +219,7 @@
             </ul>
           </div>
           <div class="footer-col">
-            <h4>Special Deal</h4>
+            <h1>Special Deal</h1>
             <ul class="ul_footer">
               <li><a href="#">Book Via www.nowworld.com</a></li>
               <li>
@@ -241,12 +231,20 @@
             </ul>
           </div>
           <div class="footer-col">
-            <h4>follow us</h4>
+            <h1>follow us</h1>
             <div class="social-links">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#/" aria-label="facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#/" aria-label="twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#/" aria-label="instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#/" aria-label="linkedin"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
             </div>
           </div>
         </div>
