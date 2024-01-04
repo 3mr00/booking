@@ -29,6 +29,7 @@ body {
   height: 100vh;
   font-family: "Montserrat", sans-serif;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 .container {
   max-width: 1000px;
@@ -248,7 +249,6 @@ header {
   margin: 65px auto;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
 }
 .container_header {
   position: relative;
@@ -325,6 +325,7 @@ header {
   padding: 11px;
   border-radius: 10px;
   outline: none;
+  color: #1c2520;
 }
 .input_group {
   display: flex;
@@ -450,7 +451,7 @@ header {
     margin-left: 20px;
     gap: 10px;
     width: 100%;
-    padding-right: 40px;
+    padding-right: 40px !important;
   }
 }
 @media screen and (max-width: 900px) {
@@ -468,7 +469,6 @@ header {
     width: 100%;
     overflow-x: scroll;
     overflow-y: hidden;
-    padding-right: 40px;
   }
 }
 @media screen and (max-width: 800px) {
