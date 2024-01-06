@@ -458,7 +458,6 @@ header {
     justify-content: flex-start;
     gap: 10px;
     width: 100%;
-    padding-right: 40px !important;
   }
   .input_group {
     width: auto;
@@ -473,6 +472,10 @@ header {
     font-size: 10px;
     display: flex;
     gap: 5px;
+  }
+  .category {
+    overflow-x: scroll;
+    padding-right: 40px !important;
   }
 }
 @media screen and (max-width: 800px) {
