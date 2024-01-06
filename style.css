@@ -50,7 +50,6 @@ body {
   top: 0;
   background-color: #fff;
   z-index: 100;
-  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); */
 }
 .img_logo {
   width: 32px;
@@ -93,7 +92,7 @@ body {
 
 .navbar-link:hover {
   color: var(--navbar-text-color-focus);
-  background-color: var(--navbar-bg-contrast);
+  background-color: #144e5a;
 }
 .navbar-logo {
   border-radius: 50%;
@@ -276,8 +275,7 @@ header {
 }
 .search_box {
   background: #fff;
-  width: 85%;
-  margin: 0 auto;
+
   border-radius: 25px;
   padding: 10px;
   display: flex;
@@ -288,9 +286,7 @@ header {
 
 .category {
   display: flex;
-  justify-content: center;
   gap: 10px;
-  width: 83%;
   margin-bottom: 17px;
 }
 
@@ -330,6 +326,7 @@ header {
   display: flex;
   flex-direction: column;
   position: relative;
+  width: 12.5%;
 }
 .label_from {
   font-weight: 600;
@@ -386,14 +383,36 @@ header {
   transition: all ease-in-out 200ms;
   cursor: pointer;
 }
-
+.search_category_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 0px 100px;
+}
 @media screen and (min-width: 1500px) {
   .header_h2 {
     font-size: 72px;
   }
+  .input_group {
+    width: 13%;
+  }
+  .form_group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+  }
+  .search_category_div {
+    padding: 0px 120px;
+  }
 }
 
 @media (min-width: 2400px) {
+  .search_category_div {
+    padding: 0px 210px;
+  }
   header {
     margin: 80px auto;
   }
@@ -404,24 +423,9 @@ header {
   }
   .category {
     display: flex;
-    justify-content: center;
     gap: 10px;
-    width: 73%;
   }
-  .search_box {
-    width: 85%;
-    height: 13%;
-  }
-  .input_group {
-    width: 15%;
-  }
-  .form_group {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 100%;
-  }
+
   .label_from {
     font-size: 20px;
   }
@@ -452,10 +456,15 @@ header {
   .category {
     display: flex;
     justify-content: flex-start;
-    margin-left: 20px;
     gap: 10px;
     width: 100%;
     padding-right: 40px !important;
+  }
+  .input_group {
+    width: auto;
+  }
+  .search_category_div {
+    padding: 0px 15px;
   }
 }
 @media screen and (max-width: 900px) {
@@ -464,15 +473,6 @@ header {
     font-size: 10px;
     display: flex;
     gap: 5px;
-  }
-  .category {
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 20px;
-    gap: 10px;
-    width: 100%;
-    overflow-x: scroll;
-    overflow-y: hidden;
   }
 }
 @media screen and (max-width: 800px) {
@@ -496,7 +496,7 @@ header {
 
 @media screen and (max-width: 450px) {
   .select_h {
-    height: 30px;
+    height: 35px;
   }
   header {
     height: 95%;

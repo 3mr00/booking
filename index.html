@@ -87,113 +87,129 @@
           loading="lazy"
         />
       </span>
-      <span style="overflow: hidden">
-        <div class="category">
-          <button class="glass_button active">
-            <i class="fa-solid fa-hotel"></i> Hotels
-          </button>
-          <button class="glass_button">
-            <i class="fa-solid fa-plane-up"></i> Flights
-          </button>
-          <button class="glass_button">
-            <i class="fa-brands fa-nfc-symbol"></i> Transfers
-          </button>
-          <button class="glass_button">
-            <i class="fa-solid fa-tree"></i> Activities
-          </button>
-          <button class="glass_button">
-            <i class="fa-solid fa-handshake"></i>
-            Meet&Greet
-          </button>
-          <button class="glass_button">
-            <i class="fa-solid fa-box-open"></i> Packages
-          </button>
-          <button class="glass_button">
-            <i class="fa-solid fa-file-pen"></i>
-            OfftlineRequest
-          </button>
-        </div>
-      </span>
+      <div class="search_category_div">
+        <span style="overflow: hidden">
+          <div class="category">
+            <button class="glass_button active">
+              <i class="fa-solid fa-hotel"></i> Hotels
+            </button>
+            <button class="glass_button">
+              <i class="fa-solid fa-plane-up"></i> Flights
+            </button>
+            <button class="glass_button">
+              <i class="fa-brands fa-nfc-symbol"></i> Transfers
+            </button>
+            <button class="glass_button">
+              <i class="fa-solid fa-tree"></i> Activities
+            </button>
+            <button class="glass_button">
+              <i class="fa-solid fa-handshake"></i>
+              Meet&Greet
+            </button>
+            <button class="glass_button">
+              <i class="fa-solid fa-box-open"></i> Packages
+            </button>
+            <button class="glass_button">
+              <i class="fa-solid fa-file-pen"></i>
+              OfftlineRequest
+            </button>
+          </div>
+        </span>
 
-      <form class="search_box">
-        <div class="form_group">
-          <div class="input_group">
-            <label for="cityInput1" class="label_from">Destination</label>
-            <input
-              id="cityInput1"
-              class="Inputs_search form_control"
-              id="cityInput"
-              type="text"
-              placeholder="Enter a city"
-            />
-            <ul id="suggestions1" class="suggestions datalist_ul"></ul>
-          </div>
-          <div class="input_group">
-            <label for="checkInDate" class="label_from">check in</label>
+        <form class="search_box">
+          <div class="form_group">
+            <div class="input_group">
+              <label for="cityInput1" class="label_from">Destination</label>
+              <input
+                id="cityInput1"
+                class="Inputs_search form_control input_auto"
+                id="cityInput"
+                type="text"
+                placeholder="Enter a city"
+              />
+              <ul id="suggestions1" class="suggestions datalist_ul"></ul>
+            </div>
+            <div class="input_group">
+              <label for="checkInDate" class="label_from">check in</label>
 
-            <input
-              type="date"
-              id="checkInDate"
-              class="form_control select_h"
-              placeholder="check in"
-            />
-          </div>
-          <div class="input_group">
-            <label for="checkOutDate" class="label_from">check out</label>
+              <input
+                type="date"
+                id="checkInDate"
+                class="form_control select_h"
+                placeholder="check in"
+              />
+            </div>
+            <div class="input_group">
+              <label for="checkOutDate" class="label_from">check out</label>
 
-            <input
-              onchange="calculateNights()"
-              type="date"
-              id="checkOutDate"
-              class="form_control select_h"
-              placeholder="check out"
-            />
-          </div>
-          <div class="input_group">
-            <label for="nightOptions" class="label_from">Nights</label>
-            <select
-              class="form_control select_h"
-              id="nightOptions"
-              onchange="calculateDate()"
-            >
-              <option value="1">1 night</option>
-              <option value="2">2 nights</option>
-              <option value="3">3 nights</option>
-              <option value="4">4 nights</option>
-              <option value="5">5 nights</option>
-              <option value="6">6 nights</option>
-              <option value="7">7 nights</option>
-              <option value="8">8 nights</option>
-              <option value="9">9 nights</option>
-              <option value="10">10 nights</option>
-            </select>
-          </div>
-          <div class="input_group">
-            <label for="Travellers" class="label_from">Travellers</label>
-            <select id="Travellers" class="form_control select_h">
-              <optgroup class="form_control">
+              <input
+                onchange="calculateNights()"
+                type="date"
+                id="checkOutDate"
+                class="form_control select_h"
+                placeholder="check out"
+              />
+            </div>
+            <div class="input_group">
+              <label for="nightOptions" class="label_from">Nights</label>
+              <select
+                class="form_control select_h"
+                id="nightOptions"
+                onchange="calculateDate()"
+              >
+                <option value="1">1 night</option>
+                <option value="2">2 nights</option>
+                <option value="3">3 nights</option>
+                <option value="4">4 nights</option>
+                <option value="5">5 nights</option>
+                <option value="6">6 nights</option>
+                <option value="7">7 nights</option>
+                <option value="8">8 nights</option>
+                <option value="9">9 nights</option>
+                <option value="10">10 nights</option>
+              </select>
+            </div>
+            <div class="input_group">
+              <label for="Travellers" class="label_from">Travellers</label>
+              <select
+                id="Travellers"
+                class="form_control select_h form_control"
+              >
                 <option>1 Room,Adult 2</option>
                 <option>2 Room,Adult 1</option>
                 <option>3 Room,Adult 1</option>
-              </optgroup>
-            </select>
+              </select>
+            </div>
+            <div class="input_group">
+              <label for="cityInput2" class="label_from">Nationality</label>
+              <input
+                id="cityInput2"
+                class="Inputs_search form_control input_auto"
+                id="cityInput"
+                type="text"
+                placeholder="Enter a city"
+              />
+              <ul id="suggestions2" class="suggestions datalist_ul"></ul>
+            </div>
+            <div class="input_group">
+              <label for="Travellers" class="label_from">Rateing</label>
+              <select
+                id="Travellers"
+                class="form_control select_h form_control"
+              >
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+            <button type="submit" class="form_button active">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
           </div>
-          <div class="input_group">
-            <label for="cityInput2" class="label_from">Nationality</label>
-            <input
-              id="cityInput2"
-              class="Inputs_search form_control"
-              id="cityInput"
-              type="text"
-              placeholder="Enter a city"
-            />
-            <ul id="suggestions2" class="suggestions datalist_ul"></ul>
-          </div>
-          <button type="submit" class="form_button active">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
-        </div>
-      </form>
+        </form>
+      </div>
     </header>
 
     <!-- footer -->
